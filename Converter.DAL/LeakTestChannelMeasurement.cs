@@ -5,7 +5,7 @@ namespace Converter.DAL;
 public class LeakTestChannelMeasurement
 {
     [XmlElement("MEA")]
-    public string Measurement { get; set; }
+    public string? Measurement { get; set; }
         
     [XmlElement("VALUE")]
     public float Value { get; set; }
@@ -20,5 +20,5 @@ public class LeakTestChannelMeasurement
     public float LimitLower { get; set; }
         
     [XmlElement("UNIT")]
-    public string Unit { get; set; }
+    public string? Unit { get; set; }
 }

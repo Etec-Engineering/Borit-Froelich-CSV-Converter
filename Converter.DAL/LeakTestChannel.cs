@@ -5,7 +5,7 @@ namespace Converter.DAL;
 public class LeakTestChannel
 {
     [XmlElement("CHANNELNO")]
-    public string ChannelNumber { get; set; }
+    public string? ChannelNumber { get; set; }
         
     [XmlElement("STU")]
     public int Stu { get; set; }
@@ -14,8 +14,8 @@ public class LeakTestChannel
     public int TpNumber { get; set; }
         
     [XmlElement("EVAL")]
-    public string Eval { get; set; }
+    public string? Eval { get; set; }
         
     [XmlElement("MEAS")]
-    public LeakTestChannelMeasurement[] Measurements { get; set; }
+    public LeakTestChannelMeasurement[]? Measurements { get; set; }
 }

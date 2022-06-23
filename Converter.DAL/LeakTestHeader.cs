@@ -6,24 +6,24 @@ namespace Converter.DAL;
 public class LeakTestHeader
 {
     [XmlElement("PANEL")]
-    public string Panel { get; set; }
+    public string? Panel { get; set; }
         
     [XmlElement("PANELNAME")]
-    public string PanelName { get; set; }
+    public string? PanelName { get; set; }
         
     [XmlElement("DAT")]
-    public string Date { get; set; }
+    public string? Date { get; set; }
         
     [XmlElement("TIM")]
-    public string Time { get; set; }
+    public string? Time { get; set; }
         
     public DateTime DateTime => DateTime.ParseExact($"{Date} {Time}", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture);
 
     [XmlElement("PARTNO")]
-    public string PartNumber { get; set; }
+    public string? PartNumber { get; set; }
         
     [XmlElement("PARTTYPE")]
-    public string PartType { get; set; }
+    public string? PartType { get; set; }
         
     [XmlElement("TESTNO")]
     public int TestNumber { get; set; }
@@ -41,8 +41,8 @@ public class LeakTestHeader
     public int Operator { get; set; }
         
     [XmlElement("TP")]
-    public string Tp { get; set; }
+    public string? Tp { get; set; }
         
     [XmlElement("EVALALL")]
-    public string EvalAll { get; set; }
+    public string? EvalAll { get; set; }
 }

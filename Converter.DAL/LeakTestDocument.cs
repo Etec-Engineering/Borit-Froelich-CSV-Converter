@@ -6,11 +6,11 @@ namespace Converter.DAL;
 public class LeakTestDocument
 {
     [XmlElement("HEADER")]
-    public LeakTestHeader Header { get; set; }
+    public LeakTestHeader? Header { get; set; }
         
     [XmlElement("ERRORS")]
-    public LeakTestErrors Errors { get; set; }
+    public LeakTestErrors? Errors { get; set; }
         
     [XmlElement("CHANNEL")]
-    public LeakTestChannel Channel { get; set; }
+    public LeakTestChannel? Channel { get; set; }
 }
