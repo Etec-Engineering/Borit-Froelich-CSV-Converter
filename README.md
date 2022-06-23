@@ -5,7 +5,7 @@
   - [Table Of Contents](#table-of-contents)
   - [Getting started](#getting-started)
     - [Run by hand](#run-by-hand)
-      - [Example:](#example)
+      - [Example](#example)
     - [Run using Task Scheduler](#run-using-task-scheduler)
   - [License](#license)
 
@@ -28,7 +28,7 @@ To convert a bunch of XML files to CSV, the program needs 2 options:
 - Source directory
 - Destination directory
 
-#### Example:
+#### Example
 Your source directory is located at `C:\input` and your output directory is located at `C:\output`.  
 You would then run the following command: `C:\Borit-Froelich-XML-CSV-Converter\Converter.CLI.exe -s C:\input -d C:\output`  
 The options `-s` and `-d` stand for source and destination correspondingly.
