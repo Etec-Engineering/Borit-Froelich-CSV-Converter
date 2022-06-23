@@ -57,6 +57,8 @@ public static class XmlConverter
                 }
 
                 var baseFileName = Path.GetFileName(file);
+
+                fileStream.Dispose();
                 File.Move(file, Path.Join(xmlDirectory, baseFileName));
             } catch (Exception e) {
                 Console.WriteLine($"Could not process file: {file}");
