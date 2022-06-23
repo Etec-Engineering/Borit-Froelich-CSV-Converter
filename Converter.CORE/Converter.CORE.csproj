@@ -7,7 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Converter.CSV\Converter.CSV.csproj" />
       <ProjectReference Include="..\Converter.DAL\Converter.DAL.csproj" />
     </ItemGroup>
 
